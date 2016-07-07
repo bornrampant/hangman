@@ -1,3 +1,5 @@
+//doc ready
+$(document).ready(function){
 //confirm age
 var confirmAge = confirm("18 and over only...");
 
@@ -132,4 +134,5 @@ $(document).ready(function() {
     drawWord();
     drawGuesses();
     $('#guess').attr('onkeyup', 'update();');
+});
 });
