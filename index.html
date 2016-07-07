@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hangman Project TEST</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="container">
+          <div class = "page-header"> 
+            <h1><strong>mega<font color="skyblue">HANG</font></strong>
+            <br> 
+            poke<font color="skyblue">MAN</font></h1>
+
+            <div class="col-md-2">
+                <div id="hangman_img" class="image0"><font color="black">█______________</font>░░░░███
+                        <font color="black">█______________</font>░░░███▒▒█
+                        <font color="black">█______________</font>░█▒▒▒█▒▒█
+                        <font color="black">█______________</font>█▒▒▒▒▒████
+                        <font color="black">█_____________</font>█▒▒▒▒▒█▒▒▒█
+                        <font color="black">███████████</font>█▒▒▒▒▒▒▒██▒█
+                                                        █░░░░░░░░░░█▒▒▒░░░░▒▒░█
+                                                        █░░░░░░░░░░█▒▒░░░██░█░█
+                                                        █░░░░░░░░░░░█▒░░░██░█░█
+                                                        █░░░░░░░░░░██▒░░░░░░░░█
+                                                        █░░░░░░░░██▒▒█▒░████░█
+                                                        █░░░░░░░█▒▒▒▒▒█░░░░░█▒▒▒█
+                                                        █░░░░░░░█▒▒▒▒▒▒█████▒▒▒▒█
+                                                        █░░░░░░█▒▒▒▒█▒▒▒▒▒▒▒█▒▒▒▒█
+                                                        █░░░░░░█▒▒███▒▒▒▒▒▒▒███▒▒█
+                                                        █░░░░░░█▒▒▒██▒▒▒▒▒▒▒██▒▒▒█
+                                                        █░░░░░░█▒▒▒██▒▒▒▒▒▒▒██▒▒▒█
+                                                        █░░░░░░░███░█▒▒▒▒▒▒▒█▒███
+                                                        █░░░░░░░░░░█▒▒▒▒▒▒▒▒▒█
+                                                        █░░░░░░░░░█▒▒▒▒▒█▒▒▒▒▒█
+                                                        █░░░░░░░░██▒▒▒▒█░█▒▒▒▒██
+                                                        █░░░░░░██▒▒▒▒▒█░░░█▒▒▒▒▒██
+                                                        █░░░░░█▒▒▒▒▒▒▒█░░░█▒▒▒▒▒▒▒█
+                                                        █░░░░░█████████░░░█████████
+                             
+                                <audio controls autoplay visable>
+                                <source src="videoplayback.m4a" type="audio/mpeg">
+                                <var audio = document.getElementById("videoplayback.m4a"),
+                                audio.volume = 1, autostart="-1"
+                                </audio></div></var></audio></div>
+<!-- autoplay no -->
+
+            </div>
+
+            <div id="word" class="col-md-4 text-center">
+                <h4>Your word is :</h4>
+                <p><strong id="targetWord"></strong></p>
+            </div>
+
+            <div id="guesses" class="col-md-4 text-center">
+                <h4>You already guessed :</h4>
+                <p><strong id="previousGuesses"></strong></p>
+            </div>
+
+            <div class="row">
+                <div id="guessInput" class="col-md-8 text-center">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="text" maxlength="1" id="guess" placeholder="Type a letter" />
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/hangman.js" type="text/javascript"></script>
+        <div class="modal fade" id="endGame" tabindex="-1" role="dialog" aria-labelledby="endGame" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <!--  <h3><a onclick="resetGame();" class="close" data-dismiss="modal" aria-hidden="true">&times;</a></h3> -->
+                        <h4 id="endGameTitle"></h4>
+                    </div>
+                    <div class="modal-body" id="endGameContent"></div>
+                    <div class="modal-footer">
+                        <h4><a onclick="resetGame();" class="btn btn-primary" data-dismiss="modal">Reset</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/hangman.js" type="text/javascript"></script>
+        </div></div></div>
+    </body>
+</html>
+

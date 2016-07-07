@@ -1,0 +1,27 @@
+.image0, .image1, .image2, .image3, .image4 {
+    width: 95px;
+    height: 110px;
+    background: url('../img/sprite.png');
+    background-position: 0px 0px;
+}
+
+.image0 {
+    background-position: 0px 0px;
+}
+.image1 {
+    background-position: -85px 0px;
+}
+.image2 {
+    background-position: -170px 0px;
+}
+.image3 {
+    background-position: -340px 0px;
+}
+.image4 {
+    background-position: -680px 0px;
+}
+
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
